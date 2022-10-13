@@ -83,20 +83,39 @@ header .btn {
 
 section {
   background-image: url(/assets/section_background.svg);
-  background-size: cover;
+  /* background-size: cover; */
   display: flex;
   justify-content: center;
   text-align: center;
   color: white;
-  padding: 80px 50px;
+  padding: 80px 30px;
+  font-size: 30px;
 }
 
-section .circle {
-  height: 125px;
-  width: 125px;
-  background-color: white;
+/* section .gaz {
+  font-size: 39.5px;
+} */
+
+.circle {
+  /* padding: 40px; */
+  height: 400px;
+  width: 400px;
+  background-color: grey;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.circle2 {
+  /* padding: 40px; */
+  height: 400px;
+  width: 400px;
+  background-color: grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 section h2 {
