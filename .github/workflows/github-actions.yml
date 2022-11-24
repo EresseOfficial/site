@@ -27,4 +27,4 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
         
       - name: Deploy wth rsync
-        run: rsync -n ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/parallels/Documents/DevOps/
+        run: rsync -n ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/parallels/Documents/DevOps
