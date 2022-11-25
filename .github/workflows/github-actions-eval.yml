@@ -21,6 +21,7 @@ jobs:
         uses: shimataro/ssh-key-action@v2.4.0
         with: 
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ' '
           
       - name: Deploy with rsync
         run: rsync ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} /var/www/html/site
