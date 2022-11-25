@@ -24,6 +24,6 @@ jobs:
           known_hosts: ' '
           
       - name: Deploy with rsync
-        run: rsync -n ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} /var/www/html/site
+        run: rsync -avz ./ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} /var/www/html/site
           
       
